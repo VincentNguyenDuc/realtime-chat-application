@@ -1,23 +1,23 @@
-# Python Project Template
+# A simple real time chat application in Django
 
 ## Table of Contents
 
-- [A search engine implemented in Python](#a-search-engine-implemented-in-python)
+- [A simple real time chat application in Django](#a-simple-real-time-chat-application-in-django)
   - [Table of Contents](#table-of-contents)
   - [General Information](#general-information)
   - [Technologies](#technologies)
   - [Set Up](#set-up)
   - [Usage](#usage)
-  - [Testing](#testing)
   - [Going Further](#going-further)
 
 ## General Information
 
+A simple realtime Chat Application in Python
 
 ## Technologies
 
 - Python
-- Unittest
+- Django
 
 ## Set Up
 
@@ -30,17 +30,7 @@
 pip install -r requirements.txt
 ```
 
-
 ## Usage
-
-
-## Testing
-
-To run all the test cases in the folder 'test', simply run:
-
-```bash
-python -m unittest
-```
 
 ## Going Further
 
