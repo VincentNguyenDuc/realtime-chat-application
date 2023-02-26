@@ -12,7 +12,7 @@
 
 ## General Information
 
-A simple realtime Chat Application in Python
+A simple realtime Chat Application in Python using Django
 
 ## Technologies
 
@@ -23,14 +23,33 @@ A simple realtime Chat Application in Python
 
 - Install Pip following this [instruction](https://pip.pypa.io/en/stable/installation/)
 - Set up virtual environment following this [instruction](https://docs.python.org/3/library/venv.html)
-- Clone [this repository](link to repo) to your working directory
+- Clone [this repository](https://github.com/VincentNguyenDuc/realtime-chat-application.git) to your working directory
 - Install dependencies from requirements.txt:
 
 ```bash
 pip install -r requirements.txt
 ```
 
+- Create a .env file in realchat folder, generate a random SECRET_KEY and copy paste into the .env file:
+
+```python
+from django.core.management.utils import get_random_secret_key
+print(get_random_secret_key())
+```
+
+```python
+# within the .env file
+SECRET_KEY = "{new secret key}"
+```
+
 ## Usage
+
+- To run the server, activate the virtual environment, and running the following command:
+
+```bash
+python manage.py runserver
+```
 
 ## Going Further
 
+- Have to secure "SECRET_KEY"
