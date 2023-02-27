@@ -63,4 +63,4 @@ python manage.py runserver
 
 ## Going Further
 
-- Have to secure "SECRET_KEY"
+- Have replaced the unsecured SECRET_KEY with a new one
