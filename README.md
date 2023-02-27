@@ -46,7 +46,14 @@ SECRET_KEY = "{new secret key}"
 
 - To run the server, activate the virtual environment, and running the following command:
 
-```bash
+```python
+# migrate
+python manage.py migrate
+
+# create admin and follow the instructions
+python manage.py createsuperuser
+
+# run server
 python manage.py runserver
 ```
 
