@@ -17,7 +17,11 @@ A simple realtime Chat Application in Python using Django
 ## Technologies
 
 - Python
+- JavaScript
+- HTML
+- CSS
 - Django
+- Ajax
 
 ## Set Up
 

@@ -14,7 +14,31 @@
 
     <h2>Room {{room}}</h2>
 
-    <div id="display"></div>
+    <div id="display">
+        
+    </div>
+    <script>
+    $(document).ready(function () {
+
+        setInterval(function () {
+            $.ajax({
+                type: 'GET',
+                url: "/getMessages/{{room}}/",
+                success: function (response) {
+                    console.log(response);
+                    $("#display").empty();
+                    for (let key in response.messages) {
+                        let temp = "<div class='container darker'><b>" + response.messages[key].user + "</b><p>" + response.messages[key].value + "</p><span class='time-left'>" + response.messages[key].date + "</span></div>";
+                        $("#display").append(temp);
+                    }
+                },
+                error: function (response) {
+                    alert('An error occurred')
+                }
+            });
+        }, 1000);
+    })
+    </script>
 
     
     <div class="container">
